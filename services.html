@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spares & Services - Value Concepts</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #0d2c54;
+      padding: 30px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .quote-btn {
+      background-color: #ffcc00;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #1c0b4b;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 700;
+      margin-top: 70px;
+      margin-bottom: 60px;
+      color: #1c0b4b;
+    }
+
+    .service-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .service-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 80px;
+      flex-wrap: wrap;
+    }
+
+    .service-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .service-img {
+      flex: 1 1 45%;
+      max-width: 480px;
+    }
+
+    .service-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .service-text {
+      flex: 1 1 45%;
+    }
+
+    .service-text h3 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .service-text p {
+      color: #555;
+      line-height: 1.6;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .learn-more-button {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #1c0b4b;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer {
+      background-color: #1c0b4b;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .footer a {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      .service-block {
+        flex-direction: column !important;
+      }
+
+      .service-text,
+      .service-img {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+
+      .service-text {
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">Value Concepts</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="services.html">Spares & Services</a></li>
+        <li><a href="quote.html" class="quote-btn">Get a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="service-section">
+    <h2 class="section-title">Spares & Services</h2>
+
+    <div class="service-block">
+      <div class="service-img sr-left">
+        <img src="images/services1.jpg" alt="Life Cycle Performance" />
+      </div>
+      <div class="service-text sr-right">
+        <h3>Optimized Life Cycle Performance</h3>
+        <p>Unmatched reliability. Optimal performance. Sound operating economy. Ease of availability. These are the reasons you initially invested in 
+          Alfa Laval equipment. Why stop there? With Alfa Laval Service, enjoy total peace of mind for the entire service lifetime 
+          of your equipment. When you choose the <b>best equipment</b> on the market, you should choose the best service and support to 
+          go along with them. Only then can you be sure that your processes move along smoothly, delivering 
+          the uptime you have come to expect of Alfa Laval equipment.</p>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div class="service-img sr-right">
+        <img src="images/upgrade.jpg" alt="Heat Exchanger Upgrade" />
+      </div>
+      <div class="service-text sr-left">
+        <h3>Plate Heat Exchanger Upgrades</h3>
+        <p>To optimize performance to meet current process requirements with <b>minimum energy consumption</b>, 
+          Alfa Laval offers three plate heat exchanger upgrade services through our highly qualified service engineers. 
+          Ensures plate and gasket materials meet current process media and temperature requirements thereby prolonging 
+          the service interval between plate and gasket replacement. This helps reduce downtime and extend plate service lifetime.</p>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div class="service-img sr-left">
+        <img src="images/centri.jpg" alt="Centrifuge Services" />
+      </div>
+      <div class="service-text sr-right">
+        <h3>Centrifuge Services</h3>
+        <p>Alfa Laval centrifuges operate on a high RPM resulting in very high “G force” resulting in efficient 
+        purification or clarification of the liquid to be treated. It then becomes imperative to ensure that 
+        the centrifuge is being run in <b>top condition</b> by ensuring use of Alfa Laval <b>genuine</b> spare parts 
+        and following a Preventive Maintenance Schedule as recommended by Alfa Laval to also ensure the safety of the equipment 
+        and that of the personnel operating the equipment. 
+        We, at Value Concepts, ensure timely supply of spares so that your process is run in the most optimized way.
+
+
+        <b>We can do minor to moderate centrifuge repairs at customer site.</b></p>
+
+        <a href="https://www.alfalaval.in/service-and-support/service-overview/maintenance-services/preventive-maintenance/" 
+           target="_blank" 
+           class="learn-more-button">
+          Read more
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Value Concepts | All rights reserved</p>
+    <p>Contact us: <a href="mailto:sales1@valueconcepts.co.in">sales1@valueconcepts.co.in</a></p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('.sr-left', {
+      origin: 'left',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-out',
+      interval: 200
+    });
+
+    ScrollReveal().reveal('.sr-right', {
+      origin: 'right',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-out',
+      interval: 200
+    });
+  </script>
+
+</body>
+</html>

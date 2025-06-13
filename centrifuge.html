@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>High Speed Centrifuge</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .header {
+      background-color: #0d2c54;
+      padding: 15px 0;
+      color: white;
+      text-align: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .product-detail {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+      gap: 40px;
+    }
+
+    .video-container iframe {
+      width: 500px;
+      height: 280px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      max-width: 500px;
+    }
+
+    .product-info h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #004d4d;
+    }
+
+    .product-info p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .product-info ul {
+      padding-left: 18px;
+      margin-bottom: 25px;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgba(0, 128, 128, 0.8); /* Teal translucent */
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: rgba(0, 128, 128, 1);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background-color: #004d4d;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .product-detail {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .video-container iframe {
+        width: 100%;
+        height: 240px;
+      }
+
+      .product-info {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h2>Value Concepts</h2>
+    
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="quote.html">Get a Quote</a></li>
+    </ul>
+  </header>
+
+  <section class="product-detail">
+    <div class="video-container">
+      <!-- 📽️ Embedded video -->
+      <iframe src="https://www.youtube.com/embed/cT8qn8Hreg4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="product-info">
+      <h1>High Speed Centrifuge</h1>
+      <p>
+       The Alfa Laval MAB is a solids-retaining centrifugal separator that can 
+        act as a clarifier and a purifier. It helps <b>optimize performance </b>, 
+        operating costs and durability.
+        The Alfa Laval MAB separator helps <b>prevent breakdowns </b> and reduce 
+        downtime on equipment that uses fuel or lubricating oils. 
+        This flexible separator is suitable for all marine installations 
+        and power stations. Use it as a purifier or clarifier, ensuring 
+        <b>reliable equipment</b> operation for longer.
+      </p>
+    
+      <p><em>"Alfa Laval doesn’t do average. Whether it is our multi-purpose Industrial range — including hydraulic and lube oil heating and cooling, water/water application, diesel cooling, Quenching application – you buy into reduced cost of ownership and increased efficiency and safety."</em></p>
+      <a href="products.html" class="back-button">← Back to Products</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Value Concepts | All rights reserved</p>
+  </footer>
+
+</body>
+</html>

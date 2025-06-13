@@ -1,0 +1,286 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f8fa;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+.header {
+  background-color: #0d2c54;
+  padding: 40px 0;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+.logo {
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+.quote-btn {
+  background: #ffcc00;
+  color: #0d2c54 !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(13, 44, 84, 0.7), rgba(13, 44, 84, 0.7)), url('images/bg-hero.jpg') center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color:#222
+  
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: #000000;
+}
+
+.btn-primary {
+  background-color: #ffcc00;
+  color: #0d2c54;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #f7b500;
+}
+
+/* Products on Home Page */
+.products-home {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #0d2c54;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 90%;
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 11px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.product-info {
+  padding: 35px;
+  width: 50%;
+}
+
+.product-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0d2c54;
+}
+
+.product-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.btn-secondary {
+  background-color: #0d2c54;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #08325e;
+}
+
+/* Footer */
+.footer {
+  background-color: #0d2c54;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer a {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.site-logo {
+  height: 50px;
+  width: auto;
+  margin-left: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 0;
+}
+
+.nav-logo {
+  height: 70px;
+  width: auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-links-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.learn-more-button {
+  display: inline-block;
+  background-color: #0d2c54; /* Dark blue */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #0a2342; /* Slightly darker for hover */
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px 80px;
+  background: url('images/industries.jpg') no-repeat center center/cover;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(123, 164, 218, 0.6); /* soft blue tint overlay */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .industry {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .industry img {
+    max-width: 100%;
+  }
+
+  .industry-text {
+    max-width: 100%;
+  }
+}

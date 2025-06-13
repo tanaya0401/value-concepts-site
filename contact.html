@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Value Concepts</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    /* === NAVBAR === */
+    nav {
+      background-color: #0c2d5c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px; /* Made bigger */
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .quote-button {
+      background-color: #ffd700;
+      color: #000;
+      font-weight: 500;
+      padding: 12px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .quote-button:hover {
+      background-color: #e6c200;
+    }
+
+    /* === CONTACT PAGE === */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px;
+      flex-wrap: wrap;
+      gap: 40px;
+      min-height: calc(100vh - 120px); /* Makes contact area fill screen height minus navbar */
+    }
+
+    .contact-info {
+      flex: 1;
+      max-width: 500px;
+      background: #f2f2f2;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info h2 {
+        margin-top: 0; /* 🟢 Reduces space from top */
+        margin-bottom: 20px;
+        font-size: 28px;
+        color: #001f4d;
+        text-align: center;
+    }
+
+    .contact-info p {
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+
+    .contact-info a {
+      color: #0c2d5c;
+      text-decoration: none;
+    }
+
+    .map {
+      flex: 1;
+      min-width: 300px;
+      height: 360px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Value Concepts</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="quote.html" class="quote-button">Get a Quote</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Page Content -->
+  <div class="container">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>📍 416, Chetak Centre Annex, 12/2, RNT Marg, Indore – 452001</p>
+      <p>📞 +91 93032 30577</p>
+      <p>✉️ <a href="mailto:sales1@valueconcepts.co.in">sales1@valueconcepts.co.in</a></p>
+    </div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.5028261996747!2d75.87231137515415!3d22.715361979389048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd35394b624d%3A0x910368c6c6d371d!2sValue%20Concepts%2C%20Proprietary%20of%20Alfa%20Laval!5e0!3m2!1sen!2sin!4v1717667468416!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</body>
+</html>

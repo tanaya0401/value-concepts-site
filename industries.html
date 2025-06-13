@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Industries - Value Concepts</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .header {
+      background-color: #0d2c54;
+      padding: 30px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .quote-btn {
+      background-color: #ffcc00;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #1c0b4b;
+    }
+
+    /* Section Title */
+    .section-title {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 700;
+      margin-top: 70px;
+      margin-bottom: 60px;
+      color: #1c0b4b;
+    }
+
+    /* Industry Section */
+    .industry-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .industry-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 80px;
+      flex-wrap: wrap;
+    }
+
+    .industry-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .industry-img {
+      flex: 1 1 45%;
+      max-width: 480px;
+    }
+
+    .industry-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .industry-text {
+      flex: 1 1 45%;
+    }
+
+    .industry-text h3 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .industry-text p {
+      color: #555;
+      line-height: 1.6;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1c0b4b;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .footer a {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .industry-block {
+        flex-direction: column !important;
+      }
+
+      .industry-text,
+      .industry-img {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+
+      .industry-text {
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">Value Concepts</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="services.html">Spares & Services</a></li>
+        <li><a href="quote.html" class="quote-btn">Get a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="industry-section">
+    <h2 class="section-title">Industries We Serve</h2>
+
+    <div class="industry-block">
+      <div class="industry-img sr-left">
+        <img src="images/machinery.png" alt="Machinery Industry" />
+      </div>
+      <div class="industry-text sr-right">
+        <h3>Machinery</h3>
+        <p>System builders and designers throughout the world integrate our heat exchangers into their machines, securing the right temperature of tools and fluids at all times.</p>
+        <p>We offer a complete range of heat transfer solutions including gasketed, copper brazed, welded, and fusion-bonded plate heat exchangers for accurate temperature control.</p>
+      </div>
+    </div>
+
+    <div class="industry-block">
+      <div class="industry-img sr-right">
+        <img src="images/paper-mill.png" alt="Paper Mill Industry" />
+      </div>
+      <div class="industry-text sr-left">
+        <h3>Paper Mill</h3>
+        <p>From deaeration to coating, our gasketed heat exchangers and centrifuges are ideal for paper mill applications. They enhance reliability, heat recovery, and cost efficiency.</p>
+      </div>
+    </div>
+
+    <div class="industry-block">
+      <div class="industry-img sr-left">
+        <img src="images/steel.png" alt="Steel Industry" />
+      </div>
+      <div class="industry-text sr-right">
+        <h3>Steel</h3>
+        <p>Temperature control is critical in steel operations. Our robust heat exchanger range supports efficient heat transfer and process reliability in extreme environments.</p>
+      </div>
+    </div>
+
+    <div class="industry-block">
+      <div class="industry-img sr-right">
+        <img src="images/metalworking.png" alt="Metal Working" />
+      </div>
+      <div class="industry-text sr-left">
+        <h3>Metal Working</h3>
+        <p>We provide heating, cooling, and fluid cleaning solutions for the metalworking industry. Accurate control and efficient cleaning improve product quality and performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Value Concepts | All rights reserved</p>
+    <p>Contact us: <a href="mailto:sales1@valueconcepts.co.in">sales1@valueconcepts.co.in</a></p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('.sr-left', {
+      origin: 'left',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-out',
+      interval: 200
+    });
+
+    ScrollReveal().reveal('.sr-right', {
+      origin: 'right',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-out',
+      interval: 200
+    });
+  </script>
+
+</body>
+</html>
